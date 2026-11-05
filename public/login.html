@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ログイン | 成績管理システム</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="login-body">
+  <main class="login-container">
+    <section class="login-card">
+      <div class="login-brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <h1>成績管理システム</h1>
+          <p>GRADE MANAGEMENT SYSTEM</p>
+        </div>
+      </div>
+
+      <h2>ログイン</h2>
+      <p class="muted">登録済みのアカウントでログインしてください。</p>
+
+      <form id="loginForm">
+        <label for="email">メールアドレス</label>
+        <input id="email" type="email" autocomplete="username" required>
+
+        <label for="password">パスワード</label>
+        <input id="password" type="password" autocomplete="current-password" required>
+
+        <p id="loginError" class="form-error"></p>
+
+        <button id="loginButton" class="btn btn-primary btn-block" type="submit">
+          ログイン
+        </button>
+      </form>
+
+      <p class="login-footer">© 2026 成績管理システム. All Rights Reserved.</p>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+  <script src="/js/firebase-config.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
