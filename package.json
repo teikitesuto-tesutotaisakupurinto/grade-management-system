@@ -1,0 +1,17 @@
+
+{
+  "name": "grade-management-system",
+  "version": "1.0.0",
+  "description": "成績管理・偏差値分析システム",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.5.0",
+    "helmet": "^8.1.0"
+  }
+}
